@@ -1,0 +1,43 @@
+[{
+    "img": "/icons/machine wash normal.png",
+    "name": "Machine Wash"
+}, {
+    "img": "",
+    "name": "Machine Wash, permanent press"
+}, {
+    "img": "l",
+    "name": "Machine Wash, delicate"
+}, {
+    "img": "",
+    "name": "Hand Wash"
+}, {
+    "img": "",
+    "name": "Do Not Wash"
+}, {
+    "img": "",
+    "name": "Water temperature 30°C"
+}, {
+    "img": "",
+    "name": "Water temperature 40°C"
+}, {
+    "img": "",
+    "name": "Water temperature 50°C"
+}, {
+    "img": "",
+    "name": "Water temperature 60°C"
+}, {
+    "img": "",
+    "name": "Water temperature 70°C"
+}, {
+    "img": "",
+    "name": "Water temperature 95°C"
+}, {
+    "img": "",
+    "name": "Water temperature 30°C"
+}, {
+    "img": "",
+    "name": "Water temperature 30°C"
+}, {
+    "img": "",
+    "name": "Water temperature 30°C"
+}]

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Laundry Assistant</title>
+  <link rel="shortcut icon" type="image/png" href="/images/main-laundry.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body onhashchange="pageChange()">
+
+  <!-- Landing page -->
+  <main>
+    <section id="home" class="page">
+      <!-- Gradient rectangle -->
+      <div class="top_rectangle">
+        <div class="top_rectangle_txt">
+          <h1>Laundry Assistant</h1>
+          <p>Give your mum a break!</p>
+          <p>Let me guide you</p>
+        </div>
+        <div class="top_rectangle_img_container">
+          <img src="/images/main-laundry.png">
+        </div>
+      </div>
+
+      <div class="menu">
+        <div class="menu_title">
+          <h1>Find what you need</h1>
+        </div>
+
+        <div class="dark-mode-button-container">
+          <button id="dark-mode-toggle" class="dark-mode-toggle">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+              <path fill="currentColor"
+                d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                transform="translate(-8 -8)" /></svg>
+          </button>
+        </div>
+
+
+        <!-- Main menu section -->
+        <div class="menu_bars">
+
+          <a href="#symbols">
+            <div class="single_bar_container">
+              <div class="single_bar_container_icon bar1">
+                <!--<img src="laundry.png">
+                <i class="fas fa-home"></i>-->
+                <i class="fab fa-unsplash"></i>
+              </div>
+              <div class="single_bar_txt_container">
+                <h4>Symbols</h4>
+                <p>Check what they mean</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#clothes">
+            <div class="single_bar_container">
+              <div class="single_bar_container_icon bar2">
+                <i class="fas fa-tshirt"></i>
+              </div>
+              <div class="single_bar_txt_container">
+                <h4>Clothing guide</h4>
+                <p>See how to wash your clothes</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#alarm">
+            <div class="single_bar_container">
+              <div class="single_bar_container_icon bar3">
+                <!--<i class="fas fa-bell"></i>-->
+                <i class="fas fa-stopwatch"></i>
+              </div>
+              <div class="single_bar_txt_container">
+                <h4>Laundry reminder</h4>
+                <p>Don't forget to take it out!</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#camera">
+            <div class="single_bar_container">
+              <div class="single_bar_container_icon bar4">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div class="single_bar_txt_container">
+                <h4>Label scanner</h4>
+                <p>Let me see your label</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGES -->
+    <!-- Symbols page -->
+    <section id="symbols" class="page">
+
+      <header class="topbar">
+        <div class="back_button">
+          <a href="#home">
+            <i class="fas fa-chevron-left"></i>
+          </a>
+        </div>
+
+        <div class="topbar_txt">
+          <h4>Symbols</h4>
+        </div>
+      </header>
+
+      <!--Main Content-->
+      <div class="grid-container">
+
+        <div id="symbols-category">
+          <a href="#symbols-container_1">
+            <div class="img_container">
+              <img src="/icons/machine wash normal.png">
+            </div>
+            <h4>Wash</h4>
+          </a>
+        </div>
+
+        <div id="symbols-category">
+          <a href="#symbols-container_2">
+            <div class="img_container">
+              <img src="/icons/bleach if needed.png">
+            </div>
+            <h4>Bleach</h4>
+          </a>
+        </div>
+
+        <div id="symbols-category">
+          <a href="#symbols-container_3">
+            <div class="img_container">
+              <img src="">
+            </div>
+            <h4>Dry</h4>
+          </a>
+        </div>
+
+        <div id="symbols-category">
+          <a href="#symbols-container_4">
+            <div class="img_container">
+              <img src="/icons/iron any temp steam or dry.png">
+            </div>
+            <h4>Iron</h4>
+          </a>
+        </div>
+
+        <div id="symbols-category">
+          <a href="#symbols-container_5">
+            <div class="img_container">
+              <img src="icons/dry clean.png">
+            </div>
+            <h4>Dry clean</h4>
+          </a>
+        </div>
+
+        <div id="symbols-category">
+          <a href="#symbols-container_6">
+            <div class="img_container">
+              <img src="icons/do not wring.png">
+            </div>
+            <h4>Wring</h4>
+          </a>
+        </div>
+
+      </div>
+
+      <header-component></header-component>
+
+    </section>
+
+
+    <!-- symbols categories -->
+    <section id="symbols-container" class="page sub">
+      <!-- TopBar -->
+      <header class="topbar">
+        <div class="back_button">
+          <a href="#symbols">
+            <i class="fas fa-chevron-left">
+            </i>
+          </a>
+        </div>
+
+        <div class="topbar_txt">
+          <h4>Wash</h4>
+        </div>
+      </header>
+      <div id="symbols_set_1" class="grid-container_icons"></div>
+      <header-component></header-component>
+    </section>
+
+    <section id="symbols-container" class="page sub">
+      <!-- TopBar -->
+      <header class="topbar">
+        <div class="back_button">
+          <a href="#symbols">
+            <i class="fas fa-chevron-left">
+            </i>
+          </a>
+        </div>
+
+        <div class="topbar_txt">
+          <h4>Bleach</h4>
+        </div>
+      </header>
+      <div id="symbols_set_2" class="grid-container_icons"></div>
+      <header-component></header-component>
+    </section>
+
+    <section id="symbols-container" class="page sub">
+      <!-- TopBar -->
+      <header class="topbar">
+        <div class="back_button">
+          <a href="#symbols">
+            <i class="fas fa-chevron-left">
+            </i>
+          </a>
+        </div>
+
+        <div class="topbar_txt">
+          <h4>Dry</h4>
+        </div>
+
+      </header>
+      <div id="symbols_set" class="grid-container_icons"></div>
+      <header-component></header-component>
+    </section>
+
+    <section id="symbols-container" class="page sub">
+      <!-- TopBar -->
+      <header class="topbar">
+        <div class="back_button">
+          <a href="#symbols">
+            <i class="fas fa-chevron-left">
+            </i>
+          </a>
+        </div>
+
+        <div class="topbar_txt">
+          <h4>Iron</h4>
+        </div>
+
+      </header>
+      <div id="symbols_set" class="grid-container_icons"></div>
+      <header-component></header-component>
+    </section>
+
+    <section id="symbols-container" class="page sub">
+      <!-- TopBar -->
+      <header class="topbar">
+        <div class="back_button">
+          <a href="#symbols">
+            <i class="fas fa-chevron-left">
+            </i>
+          </a>
+        </div>
+
+        <div class="topbar_txt">
+          <h4>Dry clean</h4>
+        </div>
+
+      </header>
+      <div id="symbols_set" class="grid-container_icons"></div>
+      <header-component></header-component>
+    </section>
+
+    <section id="symbols-container" class="page sub">
+      <!-- TopBar -->
+      <header class="topbar">
+        <div class="back_button">
+          <a href="#symbols">
+            <i class="fas fa-chevron-left">
+            </i>
+          </a>
+        </div>
+
+        <div class="topbar_txt">
+          <h4>Wring</h4>
+        </div>
+
+      </header>
+      <div id="symbols_set" class="grid-container_icons"></div>
+      <header-component></header-component>
+    </section>
+
+
+
+    <!-- clothes page -->
+    <section id="clothes" class="page sub">
+      <!-- TopBar -->
+      <header class="topbar">
+        <div class="back_button">
+          <a href="#home">
+            <i class="fas fa-chevron-left">
+            </i>
+          </a>
+        </div>
+
+        <div class="topbar_txt">
+          <h4>Clothing guide</h4>
+        </div>
+
+      </header>
+      <div id="clothes_grid" class="grid-container"></div>
+
+      <header-component></header-component>
+    </section>
+    <!-- alarm page -->
+    <section id="alarm" class="page">
+      <!-- TopBar -->
+      <header class="topbar">
+        <div class="back_button">
+          <a href="#home">
+            <i class="fas fa-chevron-left">
+            </i>
+          </a>
+        </div>
+
+        <div class="topbar_txt">
+          <h4>Laundry reminder</h4>
+        </div>
+
+      </header>
+
+      <div class="alarm_section">
+        <div id="app">
+          <h1>Current Time</h1>
+          <div id="current-time"></div>
+          <div class="create-alarm">
+            <div>Set Alarm</div>
+            <div class="form-actions">
+              <form>
+                <div class="alarm-inputs">
+                  <input type="number" name="hour" placeholder="Enter hours" min="0" max="12" required />
+                  <input type="number" name="min" min="0" max="60" placeholder="Enter minutes" required />
+                  <select name="zone" required>
+                    <option value="" selected disabled>Zone</option>
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                  </select>
+                  </select>
+                </div>
+                <button>Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="active-alarm">
+          <div id="alarm-text"></div>
+          <button id="clear-alarm">Clear Alarm</button>
+        </div>
+        <audio id="alarm-audio"></audio>
+      </div>
+
+      <header-component>
+      </header-component>
+
+    </section>
+    <!-- camera page -->
+    <section id="camera" class="page">
+      <!-- TopBar -->
+      <header class="topbar">
+        <div class="back_button">
+          <a href="#home">
+            <i class="fas fa-chevron-left">
+            </i>
+          </a>
+        </div>
+
+        <div class="topbar_txt">
+          <h4>Scan label</h4>
+        </div>
+
+      </header>
+
+
+
+      <div class="button_container">
+        <p>Scan a label on your clothes, so I can tell you how to wash them</p>
+        <label class="button" for="upload"><i class="fas fa-camera"></i><br>Scan label</label>
+        <input type="file" accept="image/*" id="upload" capture="camera" class="camera_section" />
+      </div>
+      <header-component></header-component>
+    </section>
+  </main>
+
+
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+
+  <!-- Script -->
+  <script src="js/spa.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <script src="js/reusable.js" type="text/javascript" defer></script>
+  <script src="js/dark-mode.js" type="text/javascript"></script>
+</body>
+
+</html>

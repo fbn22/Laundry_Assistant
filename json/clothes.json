@@ -1,0 +1,37 @@
+[{
+    "img": "t-shirt.png",
+    "name": "T-shirt",
+    "details": {
+        "description": "TEXTT"
+    }
+}, {
+    "img": "trousers.png",
+    "name": "Jeans",
+    "details": {
+        "description": "TEXTT"
+    }
+}, {
+    "img": "socks.png",
+    "name": "Socks",
+    "details": {
+        "description": "TEXTT"
+    }
+}, {
+    "img": "dress.png",
+    "name": "Dress",
+    "details": {
+        "description": "TEXTT"
+    }
+}, {
+    "img": "hoodie.png",
+    "name": "Hoodie",
+    "details": {
+        "description": "TEXTT"
+    }
+}, {
+    "img": "underwear.png",
+    "name": "Underwear",
+    "details": {
+        "description": "TEXTT"
+    }
+}]
