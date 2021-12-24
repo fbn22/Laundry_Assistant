@@ -1,37 +1,37 @@
 [{
-    "img": "t-shirt.png",
-    "name": "T-shirt",
-    "details": {
+        "id": "0",
+        "img": "t-shirt.png",
+        "name": "T-shirt",
+        "description": "TEXTT"
+    },
+    {
+        "id": "1",
+        "img": "t-shirt.png",
+        "name": "T-shirt",
+        "description": "TEXTT"
+    },
+    {
+        "id": "2",
+        "img": "t-shirt.png",
+        "name": "T-shirt",
+        "description": "TEXTT"
+    },
+    {
+        "id": "3",
+        "img": "t-shirt.png",
+        "name": "T-shirt",
+        "description": "TEXTT"
+    },
+    {
+        "id": "4",
+        "img": "t-shirt.png",
+        "name": "T-shirt",
+        "description": "TEXTT"
+    },
+    {
+        "id": "5",
+        "img": "t-shirt.png",
+        "name": "T-shirt",
         "description": "TEXTT"
     }
-}, {
-    "img": "trousers.png",
-    "name": "Jeans",
-    "details": {
-        "description": "TEXTT"
-    }
-}, {
-    "img": "socks.png",
-    "name": "Socks",
-    "details": {
-        "description": "TEXTT"
-    }
-}, {
-    "img": "dress.png",
-    "name": "Dress",
-    "details": {
-        "description": "TEXTT"
-    }
-}, {
-    "img": "hoodie.png",
-    "name": "Hoodie",
-    "details": {
-        "description": "TEXTT"
-    }
-}, {
-    "img": "underwear.png",
-    "name": "Underwear",
-    "details": {
-        "description": "TEXTT"
-    }
-}]
+]

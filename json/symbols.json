@@ -1,43 +1,99 @@
 [{
-    "img": "/icons/machine wash normal.png",
-    "name": "Machine Wash"
-}, {
-    "img": "",
-    "name": "Machine Wash, permanent press"
-}, {
-    "img": "l",
-    "name": "Machine Wash, delicate"
-}, {
-    "img": "",
-    "name": "Hand Wash"
-}, {
-    "img": "",
-    "name": "Do Not Wash"
-}, {
-    "img": "",
-    "name": "Water temperature 30°C"
-}, {
-    "img": "",
-    "name": "Water temperature 40°C"
-}, {
-    "img": "",
-    "name": "Water temperature 50°C"
-}, {
-    "img": "",
-    "name": "Water temperature 60°C"
-}, {
-    "img": "",
-    "name": "Water temperature 70°C"
-}, {
-    "img": "",
-    "name": "Water temperature 95°C"
-}, {
-    "img": "",
-    "name": "Water temperature 30°C"
-}, {
-    "img": "",
-    "name": "Water temperature 30°C"
-}, {
-    "img": "",
-    "name": "Water temperature 30°C"
-}]
+        "Id": "0",
+        "name": "Wash",
+        "img": "",
+        "sub": [{
+            "Id": "1",
+            "img": "",
+            "name": "Machine Wash, permanent press"
+        }, {
+            "Id": "2",
+            "img": "2",
+            "name": "Machine Wash, delicate"
+        }, {
+            "Id": "3",
+            "img": "3",
+            "name": "Hand Wash"
+        }, {
+            "Id": "4",
+            "img": "4",
+            "name": "Do Not Wash"
+        }, {
+            "Id": "5",
+            "img": "5",
+            "name": "Water temperature 30°C"
+        }, {
+            "Id": "6",
+            "img": "6",
+            "name": "Water temperature 40°C"
+        }, {
+            "Id": "7",
+            "img": "7",
+            "name": "Water temperature 50°C"
+        }, {
+            "Id": "8",
+            "img": "8",
+            "name": "Water temperature 60°C"
+        }, {
+            "Id": "9",
+            "img": "9",
+            "name": "Water temperature 70°C"
+        }, {
+            "Id": "10",
+            "img": "10",
+            "name": "Water temperature 95°C"
+        }, {
+            "Id": "11",
+            "img": "11",
+            "name": "Water temperature 30°C"
+        }, {
+            "Id": "12",
+            "img": "12",
+            "name": "Water temperature 30°C"
+        }, {
+            "Id": "13",
+            "img": "13",
+            "name": "Water temperature 30°C"
+        }]
+    },
+    {
+        "Id": "14",
+        "name": "Bleach",
+        "img": "",
+        "sub": [{
+                "Id": "15",
+                "img": "",
+                "name": "Machine Wash, permanent press"
+            },
+            {
+                "Id": "16",
+                "img": "",
+                "name": "Machine Wash, permanent press"
+            }, {
+                "Id": "17",
+                "img": "",
+                "name": "Machine Wash, permanent press"
+            }, {
+                "Id": "18",
+                "img": "",
+                "name": "Machine Wash, permanent press"
+            }, {
+                "Id": "19",
+                "img": "",
+                "name": "Machine Wash, permanent press"
+            }, {
+                "Id": "20",
+                "img": "",
+                "name": "Machine Wash, permanent press"
+            }, {
+                "Id": "21",
+                "img": "",
+                "name": "Machine Wash, permanent press"
+            }, {
+                "Id": "22",
+                "img": "",
+                "name": "Machine Wash, permanent press"
+            }
+        ]
+    }
+]

@@ -1,35 +1,36 @@
-let _allSymbols = [];
-/*
-Fetches json data from the file symbols.json
-*/
+let _symbols = [];
+let _selectedMovieId;
 
-async function fetchSymbols() {
-    let response = await fetch('json/symbols.json');
+async function init() {
+    initRouter();
+    await getSymbols();
+}
+init();
+
+// fetch all movies from WP
+async function getSymbols() {
+    let response = await fetch("json/symbols.json");
     let data = await response.json();
-    _allSymbols = data;
-    appendSymbols(_allSymbols);
+    _symbols = data;
+    appendSymbols(data, "#main-symbols-container");
+    showLoader(false);
 }
 
-fetchSymbols();
-
-/*
-Appends json data to the DOM
-*/
-function appendSymbols(symbols) {
+// append movies to the DOM
+function appendSymbols(symbols, container) {
     let htmlTemplate = "";
     for (let symbol of symbols) {
         htmlTemplate += /*html*/ `
-        <div id="symbols-category">
-            <a href="">
-                <div class="img_container">
-                     <img src="${symbol.img}">
-                </div>
-            </a>
-        </div>
+        <article onclick="showDetailView('${symbol.id}')">
+        <img src="${symbol.img}">
+        <h2>${symbol.name.rendered}</h2>
+        </article>
     `;
     }
-    document.querySelector("#symbols_set").innerHTML = htmlTemplate;
+    document.querySelector(container).innerHTML = htmlTemplate;
 }
+
+
 
 
 //loader
