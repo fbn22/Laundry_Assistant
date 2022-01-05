@@ -134,7 +134,7 @@
       </section>
 
       <header-component></header-component>
-
+ 
     </section>
 
     <!-- clothes page -->
@@ -184,35 +184,39 @@
 
       </header>
 
-      <div class="alarm_section">
-        <div id="app">
-          <h1>Current Time</h1>
-          <div id="current-time"></div>
-          <div class="create-alarm">
-            <div>Set Alarm</div>
-            <div class="form-actions">
-              <form>
-                <div class="alarm-inputs">
-                  <input type="number" name="hour" placeholder="Enter hours" min="0" max="12" required />
-                  <input type="number" name="min" min="0" max="60" placeholder="Enter minutes" required />
-                  <select name="zone" required>
-                    <option value="" selected disabled>Zone</option>
-                    <option value="AM">AM</option>
-                    <option value="PM">PM</option>
-                  </select>
-                  </select>
-                </div>
-                <button>Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div id="active-alarm">
-          <div id="alarm-text"></div>
-          <button id="clear-alarm">Clear Alarm</button>
-        </div>
-        <audio id="alarm-audio"></audio>
-      </div>
+       <!-- (A) CURRENT TIME -->
+       <div id="ctime">
+         <h1 class="header">THE CURRENT TIME</h1>
+         <div class="square">
+           <div class="digits" id="chr">00</div>
+           <div class="text">HR</div>
+         </div>
+         <div class="square">
+           <div class="digits" id="cmin">00</div>
+           <div class="text">MIN</div>
+         </div>
+         <div class="square">
+           <div class="digits" id="csec">00</div>
+           <div class="text">SEC</div>
+         </div>
+       </div>
+
+       <!-- (B) SET ALARM -->
+       <div id="tpick">
+         <h1 class="header">SET ALARM</h1>
+         <div id="tpick-h"></div>
+         <div id="tpick-m"></div>
+         <div id="tpick-s"></div>
+         <div>
+           <input type="button" value="Set" id="tset" />
+           <input type="button" value="Reset" id="treset" disabled />
+         </div>
+       </div>
+
+       <!-- (C) ALARM SOUND -->
+       <audio id="alarm-sound" loop>
+         <source src="wake-up-sound.mp3" type="audio/mp3">
+       </audio>
 
       <header-component>
       </header-component>
