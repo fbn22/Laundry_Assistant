@@ -1,11 +1,13 @@
 let _symbols = [];
+let _clothes = [];
 
 async function init() {
     await getSymbols();
+    await getClothes();
 }
 init();
 
-// fetch all movies from WP
+// fetch Main Symbols
 async function getSymbols() {
     let response = await fetch("json/symbols.json");
     let data = await response.json();
@@ -20,8 +22,10 @@ function appendSymbols(symbols, container) {
     let htmlTemplate = "";
     for (let symbol of symbols) {
         htmlTemplate += /*html*/ `
-        <article onclick = "showDetailView('${symbol.id}')">
+        <article class="symbols-category" onclick = "showDetailView('${symbol.id}')">
+        <div class="symbol-image-container">
         <img src="${symbol.img}">
+        </div>
         <h2>${symbol.name}</h2>
         </article>
     `;
@@ -31,6 +35,32 @@ function appendSymbols(symbols, container) {
 
 
 
+
+// fetch Clothes Symbols
+async function getClothes() {
+    let response = await fetch("json/clothes.json");
+    let data = await response.json();
+    _clothes = data;
+    appendClothes(data, "#main-clothes-container");
+    load(false);
+}
+
+// append clothes to the DOM
+function appendClothes(clothes, container) {
+    console.log(clothes)
+    let htmlTemplate = "";
+    for (let cloth of clothes) {
+        htmlTemplate += /*html*/ `
+        <article class="symbols-category" onclick = "showDetailView('${cloth.id}')">
+        <div class="symbol-image-container">
+        <img src="${cloth.img}">
+        </div>
+        <h2>${cloth.name}</h2>
+        </article>
+    `;
+    }
+    document.querySelector(container).innerHTML = htmlTemplate;
+}
 
 
 

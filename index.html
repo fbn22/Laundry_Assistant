@@ -115,7 +115,6 @@
     <!-- PAGES -->
     <!-- Symbols page -->
     <section id="symbols" class="page">
-
       <header class="topbar">
         <div class="back_button">
           <a href="#home">
@@ -127,15 +126,11 @@
           <h4>Symbols</h4>
         </div>
       </header>
-
       <!--Main Content-->
-      <section id="main-symbols-container" class="grid-container">
-
-      </section>
-
+      <section id="main-symbols-container" class="grid-container"></section>
       <header-component></header-component>
- 
     </section>
+
 
     <!-- clothes page -->
     <section id="clothes" class="page sub">
@@ -153,7 +148,7 @@
         </div>
 
       </header>
-      <div id="clothes_container" class="grid-container"></div>
+      <div id="main-clothes-container" class="grid-container"></div>
 
 
       <!-- detail page -->
@@ -184,39 +179,39 @@
 
       </header>
 
-       <!-- (A) CURRENT TIME -->
-       <div id="ctime">
-         <h1 class="header">THE CURRENT TIME</h1>
-         <div class="square">
-           <div class="digits" id="chr">00</div>
-           <div class="text">HR</div>
-         </div>
-         <div class="square">
-           <div class="digits" id="cmin">00</div>
-           <div class="text">MIN</div>
-         </div>
-         <div class="square">
-           <div class="digits" id="csec">00</div>
-           <div class="text">SEC</div>
-         </div>
-       </div>
+      <!-- (A) CURRENT TIME -->
+      <div id="ctime">
+        <h1 class="header">THE CURRENT TIME</h1>
+        <div class="square">
+          <div class="digits" id="chr">00</div>
+          <div class="text">HR</div>
+        </div>
+        <div class="square">
+          <div class="digits" id="cmin">00</div>
+          <div class="text">MIN</div>
+        </div>
+        <div class="square">
+          <div class="digits" id="csec">00</div>
+          <div class="text">SEC</div>
+        </div>
+      </div>
 
-       <!-- (B) SET ALARM -->
-       <div id="tpick">
-         <h1 class="header">SET ALARM</h1>
-         <div id="tpick-h"></div>
-         <div id="tpick-m"></div>
-         <div id="tpick-s"></div>
-         <div>
-           <input type="button" value="Set" id="tset" />
-           <input type="button" value="Reset" id="treset" disabled />
-         </div>
-       </div>
+      <!-- (B) SET ALARM -->
+      <div id="tpick">
+        <h1 class="header">SET ALARM</h1>
+        <div id="tpick-h"></div>
+        <div id="tpick-m"></div>
+        <div id="tpick-s"></div>
+        <div>
+          <input type="button" value="Set" id="tset" />
+          <input type="button" value="Reset" id="treset" disabled />
+        </div>
+      </div>
 
-       <!-- (C) ALARM SOUND -->
-       <audio id="alarm-sound" loop>
-         <source src="wake-up-sound.mp3" type="audio/mp3">
-       </audio>
+      <!-- (C) ALARM SOUND -->
+      <audio id="alarm-sound" loop>
+        <source src="wake-up-sound.mp3" type="audio/mp3">
+      </audio>
 
       <header-component>
       </header-component>

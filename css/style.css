@@ -286,8 +286,9 @@ main {
   width: 100%;
 }
 
-#symbols-category {
+.symbols-category {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--clr-2nd);
@@ -296,13 +297,36 @@ main {
   height: 140px;
   width: 140px;
   box-shadow: var(--shadow);
-
 }
 
-#symbols-category:hover {
+.symbols-category h2 {
+  font-size: 27px;
+  color: var(--txt-clr-dark);
+}
+
+.symbols-category img {}
+
+.symbol-image-container {
+  height: 50px;
+  height: 50px;
+}
+
+.symbols-category:hover {
   box-shadow: 0 1px 10px rgba(39, 16, 104, 0.4);
 }
 
+
+#symbols_set_1 article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 15px;
+  width: 80px;
+  height: 80px;
+  box-shadow: var(--shadow);
+  background: var(--gradient);
+}
 
 #symbols_set_1 article {
   display: flex;
